@@ -4,7 +4,9 @@
   "description": "Starting a project cloning the Tabnews",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "lint:check": "prettier --check .",
+    "link:fix": "prettier --write ."
   },
   "author": "Me",
   "license": "ISC",
@@ -12,5 +14,8 @@
     "next": "^16.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.0"
   }
 }
